@@ -1,0 +1,61 @@
+{
+  "benchmarks": [
+    {
+      "machine": "GCP n2-highmem-8 (8 vCPU, 64 GB RAM, Debian 12, gcc -O3 -march=native -fopenmp)",
+      "n_qubits": 24,
+      "amplitudes": 16777216,
+      "p_8_15": 35,
+      "complex128_gb": 0.25,
+      "exact_gb": 0.0625,
+      "exact_s": 0.060,
+      "mod_dtype": "uint8",
+      "mod_gb": 0.015625,
+      "mod_s": 0.042,
+      "speedup": 1.43,
+      "violations": 0
+    },
+    {
+      "machine": "GCP n2-highmem-8 (8 vCPU, 64 GB RAM, Debian 12, gcc -O3 -march=native -fopenmp)",
+      "n_qubits": 28,
+      "amplitudes": 268435456,
+      "p_8_15": 69,
+      "complex128_gb": 4.00,
+      "exact_gb": 1.00,
+      "exact_s": 1.131,
+      "mod_dtype": "uint8",
+      "mod_gb": 0.25,
+      "mod_s": 0.770,
+      "speedup": 1.47,
+      "violations": 0
+    },
+    {
+      "machine": "GCP n2-highmem-8 (8 vCPU, 64 GB RAM, Debian 12, gcc -O3 -march=native -fopenmp)",
+      "n_qubits": 32,
+      "amplitudes": 4294967296,
+      "p_8_15": 137,
+      "complex128_gb": 64.00,
+      "exact_gb": 16.00,
+      "exact_s": 19.739,
+      "mod_dtype": "uint16",
+      "mod_gb": 8.00,
+      "mod_s": 13.671,
+      "speedup": 1.44,
+      "violations": 0
+    },
+    {
+      "machine": "GCP n2-custom-12-163840-ext (12 vCPU, 160 GB RAM, Swap=0B, Debian 12, gcc -O3 -march=native -fopenmp)",
+      "n_qubits": 36,
+      "amplitudes": 68719476736,
+      "p_8_15": 275,
+      "complex128_gb": 1024.00,
+      "exact_gb": 256.00,
+      "exact_s": null,
+      "exact_status": "OOM on 160 GB node",
+      "mod_dtype": "uint16",
+      "mod_gb": 128.00,
+      "mod_s": 141.567,
+      "speedup": null,
+      "violations": 0
+    }
+  ]
+}

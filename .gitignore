@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+*.exe
+fwht_omp
+quantum-walsh-rigidity-submission.zip
+paper/*.aux
+paper/*.log
+paper/*.out

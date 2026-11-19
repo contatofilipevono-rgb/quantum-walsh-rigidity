@@ -1,0 +1,114 @@
+{
+  "experiment_1_modular_certification": {
+    "n16": {
+      "n_qubits": 16,
+      "p_8_15": 9,
+      "p_1_2": 9,
+      "clean_exact_ok": true,
+      "clean_mod_ok": true,
+      "exact_ms": 2.94,
+      "mod_ms": 2.94,
+      "memory_ratio_exact_over_mod": 4,
+      "faults_tested": 32,
+      "detection_by_modulus": {
+        "3": 32,
+        "5": 32,
+        "7": 32,
+        "9": 32
+      }
+    },
+    "n20": {
+      "n_qubits": 20,
+      "p_8_15": 19,
+      "p_1_2": 17,
+      "clean_exact_ok": true,
+      "clean_mod_ok": true,
+      "exact_ms": 115.12,
+      "mod_ms": 82.55,
+      "memory_ratio_exact_over_mod": 4,
+      "faults_tested": 13,
+      "detection_by_modulus": {
+        "3": 13,
+        "5": 13,
+        "7": 13,
+        "19": 13
+      }
+    }
+  },
+  "experiment_2_antipodal_ring_obstruction": {
+    "n6": {
+      "n_qubits": 6,
+      "H": 3,
+      "samples": 200,
+      "flat_without_antipodal": 0,
+      "flat_with_antipodal_quad_sample": 100,
+      "antipodal_ring_distance": 3,
+      "min_swaps_per_antipodal_cz": 2
+    },
+    "n8": {
+      "n_qubits": 8,
+      "H": 4,
+      "samples": 200,
+      "flat_without_antipodal": 0,
+      "flat_with_antipodal_quad_sample": 200,
+      "antipodal_ring_distance": 4,
+      "min_swaps_per_antipodal_cz": 3
+    },
+    "n10": {
+      "n_qubits": 10,
+      "H": 5,
+      "samples": 200,
+      "flat_without_antipodal": 0,
+      "flat_with_antipodal_quad_sample": 143,
+      "antipodal_ring_distance": 5,
+      "min_swaps_per_antipodal_cz": 4
+    },
+    "n12": {
+      "n_qubits": 12,
+      "H": 6,
+      "samples": 60,
+      "flat_without_antipodal": 0,
+      "flat_with_antipodal_quad_sample": 30,
+      "antipodal_ring_distance": 6,
+      "min_swaps_per_antipodal_cz": 5
+    }
+  },
+  "experiment_3_quantum_magic": {
+    "n=6 Clifford graph state (deg 2, bent)": {
+      "n_qubits": 6,
+      "degree": 2,
+      "is_flat": true,
+      "stabilizer_renyi_m2": 0.0
+    },
+    "n=6 Cubic bent hypergraph (deg 3, CCZ)": {
+      "n_qubits": 6,
+      "degree": 3,
+      "is_flat": true,
+      "stabilizer_renyi_m2": 1.540568
+    },
+    "n=8 Clifford graph state (deg 2, bent)": {
+      "n_qubits": 8,
+      "degree": 2,
+      "is_flat": true,
+      "stabilizer_renyi_m2": 0.0
+    },
+    "n=8 Cubic bent hypergraph (deg 3, CCZ)": {
+      "n_qubits": 8,
+      "degree": 3,
+      "is_flat": true,
+      "stabilizer_renyi_m2": 1.540568
+    },
+    "n=8 Quartic bent hypergraph (deg 4, CCCZ)": {
+      "n_qubits": 8,
+      "degree": 4,
+      "is_flat": true,
+      "stabilizer_renyi_m2": 1.377948
+    },
+    "n=8 Mixed deg 3+4 bent hypergraph": {
+      "n_qubits": 8,
+      "degree": 4,
+      "is_flat": true,
+      "stabilizer_renyi_m2": 1.377948
+    }
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "pillar_1_exact_magic": {
+    "log2_32_over_11": 1.54056838,
+    "log2_512_over_197": 1.37794818,
+    "disjoint_ccz_verification": [
+      {
+        "n_qubits": 6,
+        "disjoint_ccz": 1,
+        "is_flat": true,
+        "m2_numeric": 1.540568,
+        "m2_theory": 1.540568,
+        "abs_error": 0.0
+      },
+      {
+        "n_qubits": 8,
+        "disjoint_ccz": 1,
+        "is_flat": true,
+        "m2_numeric": 1.540568,
+        "m2_theory": 1.540568,
+        "abs_error": 0.0
+      },
+      {
+        "n_qubits": 10,
+        "disjoint_ccz": 1,
+        "is_flat": true,
+        "m2_numeric": 1.540568,
+        "m2_theory": 1.540568,
+        "abs_error": 0.0
+      },
+      {
+        "n_qubits": 12,
+        "disjoint_ccz": 2,
+        "is_flat": true,
+        "m2_numeric": 3.081137,
+        "m2_theory": 3.081137,
+        "abs_error": 0.0
+      }
+    ]
+  },
+  "pillar_2_nisq_and_qasm": {
+    "qasm_files": [
+      "C:\\Users\\Valer\\.gemini\\antigravity\\scratch\\quantum-walsh-rigidity\\qasm\\flat_cubic_n6.qasm",
+      "C:\\Users\\Valer\\.gemini\\antigravity\\scratch\\quantum-walsh-rigidity\\qasm\\flat_quartic_n8.qasm",
+      "C:\\Users\\Valer\\.gemini\\antigravity\\scratch\\quantum-walsh-rigidity\\qasm\\fooling_p3_n8.qasm"
+    ],
+    "nisq_n8_sweep": [
+      {
+        "p_2q_error": 0.0,
+        "shots": 20000,
+        "clean": {
+          "tvd": 0.04813,
+          "chi2_over_df": 1.1081,
+          "z_score": 1.22,
+          "rejects_flatness_5sigma": false
+        },
+        "faulty_drop_cz": {
+          "tvd": 0.75,
+          "chi2_over_df": 236.1143,
+          "z_score": 2654.81,
+          "rejects_flatness_5sigma": true
+        },
+        "fooling_p3": {
+          "tvd": 0.69755,
+          "chi2_over_df": 652.3908,
+          "z_score": 7355.24,
+          "rejects_flatness_5sigma": true
+        }
+      },
+      {
+        "p_2q_error": 0.0001,
+        "shots": 20000,
+        "clean": {
+          "tvd": 0.0466,
+          "chi2_over_df": 0.9974,
+          "z_score": -0.03,
+          "rejects_flatness_5sigma": false
+        },
+        "faulty_drop_cz": {
+          "tvd": 0.74865,
+          "chi2_over_df": 235.2911,
+          "z_score": 2645.52,
+          "rejects_flatness_5sigma": true
+        },
+        "fooling_p3": {
+          "tvd": 0.69645,
+          "chi2_over_df": 650.6234,
+          "z_score": 7335.28,
+          "rejects_flatness_5sigma": true
+        }
+      },
+      {
+        "p_2q_error": 0.001,
+        "shots": 20000,
+        "clean": {
+          "tvd": 0.04398,
+          "chi2_over_df": 0.9109,
+          "z_score": -1.01,
+          "rejects_flatness_5sigma": false
+        },
+        "faulty_drop_cz": {
+          "tvd": 0.7343,
+          "chi2_over_df": 226.4304,
+          "z_score": 2545.47,
+          "rejects_flatness_5sigma": true
+        },
+        "fooling_p3": {
+          "tvd": 0.69155,
+          "chi2_over_df": 641.23,
+          "z_score": 7229.21,
+          "rejects_flatness_5sigma": true
+        }
+      },
+      {
+        "p_2q_error": 0.005,
+        "shots": 20000,
+        "clean": {
+          "tvd": 0.04303,
+          "chi2_over_df": 0.9494,
+          "z_score": -0.57,
+          "rejects_flatness_5sigma": false
+        },
+        "faulty_drop_cz": {
+          "tvd": 0.668,
+          "chi2_over_df": 187.7257,
+          "z_score": 2108.43,
+          "rejects_flatness_5sigma": true
+        },
+        "fooling_p3": {
+          "tvd": 0.64585,
+          "chi2_over_df": 558.9114,
+          "z_score": 6299.71,
+          "rejects_flatness_5sigma": true
+        }
+      },
+      {
+        "p_2q_error": 0.01,
+        "shots": 20000,
+        "clean": {
+          "tvd": 0.0456,
+          "chi2_over_df": 0.9585,
+          "z_score": -0.47,
+          "rejects_flatness_5sigma": false
+        },
+        "faulty_drop_cz": {
+          "tvd": 0.5958,
+          "chi2_over_df": 149.7245,
+          "z_score": 1679.34,
+          "rejects_flatness_5sigma": true
+        },
+        "fooling_p3": {
+          "tvd": 0.59935,
+          "chi2_over_df": 481.9833,
+          "z_score": 5431.07,
+          "rejects_flatness_5sigma": true
+        }
+      }
+    ]
+  },
+  "pillar_3_hardware_topologies": [
+    {
+      "n_qubits": 8,
+      "ring_1d": {
+        "swaps": 6,
+        "total_2q_gates": 22,
+        "depth_2q": 10,
+        "est_fidelity_1e3": 0.9782
+      },
+      "grid_2d": {
+        "swaps": 6,
+        "total_2q_gates": 22,
+        "depth_2q": 17,
+        "est_fidelity_1e3": 0.9782
+      },
+      "heavy_hex": {
+        "swaps": 6,
+        "total_2q_gates": 22,
+        "depth_2q": 11,
+        "est_fidelity_1e3": 0.9782
+      }
+    },
+    {
+      "n_qubits": 12,
+      "ring_1d": {
+        "swaps": 15,
+        "total_2q_gates": 51,
+        "depth_2q": 16,
+        "est_fidelity_1e3": 0.9503
+      },
+      "grid_2d": {
+        "swaps": 15,
+        "total_2q_gates": 51,
+        "depth_2q": 40,
+        "est_fidelity_1e3": 0.9503
+      },
+      "heavy_hex": {
+        "swaps": 18,
+        "total_2q_gates": 60,
+        "depth_2q": 25,
+        "est_fidelity_1e3": 0.9417
+      }
+    },
+    {
+      "n_qubits": 16,
+      "ring_1d": {
+        "swaps": 28,
+        "total_2q_gates": 92,
+        "depth_2q": 22,
+        "est_fidelity_1e3": 0.9121
+      },
+      "grid_2d": {
+        "swaps": 12,
+        "total_2q_gates": 44,
+        "depth_2q": 11,
+        "est_fidelity_1e3": 0.9569
+      },
+      "heavy_hex": {
+        "swaps": 26,
+        "total_2q_gates": 86,
+        "depth_2q": 28,
+        "est_fidelity_1e3": 0.9176
+      }
+    },
+    {
+      "n_qubits": 20,
+      "ring_1d": {
+        "swaps": 45,
+        "total_2q_gates": 145,
+        "depth_2q": 28,
+        "est_fidelity_1e3": 0.865
+      },
+      "grid_2d": {
+        "swaps": 15,
+        "total_2q_gates": 55,
+        "depth_2q": 11,
+        "est_fidelity_1e3": 0.9465
+      },
+      "heavy_hex": {
+        "swaps": 39,
+        "total_2q_gates": 127,
+        "depth_2q": 52,
+        "est_fidelity_1e3": 0.8807
+      }
+    },
+    {
+      "n_qubits": 24,
+      "ring_1d": {
+        "swaps": 66,
+        "total_2q_gates": 210,
+        "depth_2q": 34,
+        "est_fidelity_1e3": 0.8105
+      },
+      "grid_2d": {
+        "swaps": 48,
+        "total_2q_gates": 156,
+        "depth_2q": 73,
+        "est_fidelity_1e3": 0.8555
+      },
+      "heavy_hex": {
+        "swaps": 52,
+        "total_2q_gates": 168,
+        "depth_2q": 44,
+        "est_fidelity_1e3": 0.8453
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "n8_orbit_seeds": [
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      2,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      5
+    ]
+  ],
+  "n8_num_gates": 36,
+  "n8_flat": true,
+  "n8_m2_bits": 5.103668,
+  "n16_num_gates": 72,
+  "n16_flat_exact": true,
+  "n16_flat_mod9": true,
+  "n16_m2_bits_exact": 10.207335,
+  "qasm_files": [
+    "C:\\Users\\Valer\\.gemini\\antigravity\\scratch\\quantum-walsh-rigidity\\qasm\\rs_quartic_flat_n8.qasm",
+    "C:\\Users\\Valer\\.gemini\\antigravity\\scratch\\quantum-walsh-rigidity\\qasm\\rs_quartic_flat_n16.qasm"
+  ]
+}
