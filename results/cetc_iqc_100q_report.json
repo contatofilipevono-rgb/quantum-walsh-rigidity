@@ -1,0 +1,173 @@
+{
+  "target_hardware": "CETC-IQC 100-Qubit Superconducting Processor (CIQuanta-PB, Jo\u00e3o Pessoa, Brazil | 10x10 2D Grid, 180 couplers)",
+  "compiled_100q_circuits": {
+    "tiled_5ccz": {
+      "exact_magic_M2_bits": 7.7028,
+      "forward": {
+        "mode": "tiled_5ccz",
+        "mirror": false,
+        "n_qubits": 100,
+        "swaps": 0,
+        "physical_native_cz": 85,
+        "qac0_physical_cz_depth": 8,
+        "all_cz_physically_adjacent": true
+      },
+      "mirror": {
+        "mode": "tiled_5ccz",
+        "mirror": true,
+        "n_qubits": 100,
+        "swaps": 0,
+        "physical_native_cz": 170,
+        "qac0_physical_cz_depth": 16,
+        "all_cz_physically_adjacent": true
+      },
+      "mirror_P0_100q_at_p2q_0p2pct": 0.431,
+      "mirror_P0_100q_at_p2q_0p3pct": 0.3635,
+      "mirror_P0_100q_at_p2q_0p5pct": 0.2584
+    },
+    "global_5ccz_bridged": {
+      "exact_magic_M2_bits": 7.7028,
+      "forward": {
+        "mode": "global_5ccz_bridged",
+        "mirror": false,
+        "n_qubits": 100,
+        "swaps": 0,
+        "physical_native_cz": 89,
+        "qac0_physical_cz_depth": 8,
+        "all_cz_physically_adjacent": true
+      },
+      "mirror": {
+        "mode": "global_5ccz_bridged",
+        "mirror": true,
+        "n_qubits": 100,
+        "swaps": 0,
+        "physical_native_cz": 178,
+        "qac0_physical_cz_depth": 16,
+        "all_cz_physically_adjacent": true
+      },
+      "mirror_P0_100q_at_p2q_0p2pct": 0.4242,
+      "mirror_P0_100q_at_p2q_0p3pct": 0.3549,
+      "mirror_P0_100q_at_p2q_0p5pct": 0.2482
+    },
+    "tiled_4cccz_1ccz": {
+      "exact_magic_M2_bits": 7.0524,
+      "forward": {
+        "mode": "tiled_4cccz_1ccz",
+        "mirror": false,
+        "n_qubits": 100,
+        "swaps": 0,
+        "physical_native_cz": 121,
+        "qac0_physical_cz_depth": 17,
+        "all_cz_physically_adjacent": true
+      },
+      "mirror": {
+        "mode": "tiled_4cccz_1ccz",
+        "mirror": true,
+        "n_qubits": 100,
+        "swaps": 0,
+        "physical_native_cz": 242,
+        "qac0_physical_cz_depth": 34,
+        "all_cz_physically_adjacent": true
+      },
+      "mirror_P0_100q_at_p2q_0p2pct": 0.3732,
+      "mirror_P0_100q_at_p2q_0p3pct": 0.2928,
+      "mirror_P0_100q_at_p2q_0p5pct": 0.1801
+    }
+  },
+  "exterior_rank_mod4_obstruction_100q": {
+    "n_qubits": 100,
+    "d": 4,
+    "m": 25,
+    "min_cccz_gadgets": 29,
+    "min_native_cz_before_routing": 406,
+    "forward_fidelity_upper_bound_p005": 0.1307,
+    "mirror_survival_upper_bound_p005": 0.01034
+  },
+  "tiled_5x20_localized_fault_pinpointing": [
+    {
+      "shots": 16384,
+      "p_2q": 0.005,
+      "p_ro_0given1": 0.03,
+      "p_ro_1given0": 0.005,
+      "expected_ideal_128": 127.99,
+      "mean_c_self": 128.6,
+      "mean_c_ant_felinity": 125.5,
+      "mean_c_combined_self_cancelling": 127.05,
+      "mean_z_uncalibrated_self": 0.05,
+      "mean_z_uncalibrated_combined": -0.12,
+      "detect_5sigma_combined_no_cal": 0.0,
+      "mirror_survival_prob_0n": 0.695,
+      "mirror_snr_vs_whitenoise": 728760.8,
+      "tile_id": 0,
+      "injected_fault": false
+    },
+    {
+      "shots": 16384,
+      "p_2q": 0.005,
+      "p_ro_0given1": 0.03,
+      "p_ro_1given0": 0.005,
+      "expected_ideal_128": 127.99,
+      "mean_c_self": 128.2,
+      "mean_c_ant_felinity": 128.0,
+      "mean_c_combined_self_cancelling": 128.1,
+      "mean_z_uncalibrated_self": 0.02,
+      "mean_z_uncalibrated_combined": 0.01,
+      "detect_5sigma_combined_no_cal": 0.0,
+      "mirror_survival_prob_0n": 0.695,
+      "mirror_snr_vs_whitenoise": 728760.8,
+      "tile_id": 1,
+      "injected_fault": false
+    },
+    {
+      "shots": 16384,
+      "p_2q": 0.005,
+      "p_ro_0given1": 0.03,
+      "p_ro_1given0": 0.005,
+      "expected_ideal_128": 127.99,
+      "mean_c_self": 416.45,
+      "mean_c_ant_felinity": 26.95,
+      "mean_c_combined_self_cancelling": 221.7,
+      "mean_z_uncalibrated_self": 25.5,
+      "mean_z_uncalibrated_combined": 11.71,
+      "detect_5sigma_combined_no_cal": 1.0,
+      "mirror_survival_prob_0n": 0.7021,
+      "mirror_snr_vs_whitenoise": 736186.7,
+      "tile_id": 2,
+      "injected_fault": true
+    },
+    {
+      "shots": 16384,
+      "p_2q": 0.005,
+      "p_ro_0given1": 0.03,
+      "p_ro_1given0": 0.005,
+      "expected_ideal_128": 127.99,
+      "mean_c_self": 129.65,
+      "mean_c_ant_felinity": 126.85,
+      "mean_c_combined_self_cancelling": 128.25,
+      "mean_z_uncalibrated_self": 0.15,
+      "mean_z_uncalibrated_combined": 0.03,
+      "detect_5sigma_combined_no_cal": 0.0,
+      "mirror_survival_prob_0n": 0.695,
+      "mirror_snr_vs_whitenoise": 728760.8,
+      "tile_id": 3,
+      "injected_fault": false
+    },
+    {
+      "shots": 16384,
+      "p_2q": 0.005,
+      "p_ro_0given1": 0.03,
+      "p_ro_1given0": 0.005,
+      "expected_ideal_128": 127.99,
+      "mean_c_self": 128.15,
+      "mean_c_ant_felinity": 121.75,
+      "mean_c_combined_self_cancelling": 124.95,
+      "mean_z_uncalibrated_self": 0.01,
+      "mean_z_uncalibrated_combined": -0.38,
+      "detect_5sigma_combined_no_cal": 0.0,
+      "mirror_survival_prob_0n": 0.7614,
+      "mirror_snr_vs_whitenoise": 798383.4,
+      "tile_id": 4,
+      "injected_fault": false
+    }
+  ]
+}

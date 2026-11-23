@@ -38,6 +38,13 @@ No rotation-symmetric $\{Z, CZ, CCZ\}$ circuit on $n=2H$ qubits can prepare a fl
 
 ![Topology SWAP Routing](docs/figures/topology_swaps.png)
 
+### 4. New in v2 (arXiv Release): Exterior-Rank Mod-4 Obstruction, Zero-SWAP Steiner-Star Compilation & Calibration-Free Antipodal Felinity (20 to 100 Qubits)
+- **Symmetry-Free Degree-4 Obstruction:** any quartic symbol on $n=4m$ qubits ($m\ge 3$) with $\gamma_{m-2}(a)=0$ and $\Gamma_m(A)\equiv 2\operatorname{vol}_{4m}\pmod 4$ requires $\ge m+4$ decomposable $CCCZ$ gadgets ($\ge 9$ at $n=20 \implies \ge 126$ CZs; $\ge 12$ at $n=32$, certifying `uint8` `mod 127` verification in **4 GB RAM** for $\le 11$ $CCCZ$ gadgets; $\ge 29$ at $n=100 \implies \ge 406$ CZs).
+- **Zero-SWAP Steiner-Star ($16$-CZ $CCCZ$) & Steiner-Path ($7$-CZ $CCZ$) Compilation on 20-Qubit 2D Crystal Lattices (`QB1..QB20`):** `iqm20_flat_ccz` uses **17 physical CZs (0 SWAPs)** and `iqm20_flat_cccz` uses **26 physical CZs (0 SWAPs)**, audited across all $2^{20}$ states (`qasm/iqm20_routed/`).
+- **Calibration-Free Triple NISQ Protocol:** averaging self-collisions and antipodal bitwise-complement collisions (*felinity* $\mathcal{F}_n(\rho)$) cancels first-order asymmetric readout bias ($\pm 4n\delta^2 \to O(n^2\delta^4)$) within 16,384 shots without an extra calibration circuit, paired with mirror-circuit coherence verification ($68.1\%$--$74.6\%$ survival).
+- **100-Qubit 2D Lattice Scalability (`qasm/grid100_routed/`):** zero-SWAP $5\times 20$-qubit tiling on a $10\times 10$ lattice (**85--121 physical CZs**, $M_2 = 7.70$ bits, $+11.71\sigma$ localized fault pinpointing in 16,384 shots).
+- **Updated Manuscript:** `paper/main_v2.tex`.
+
 ---
 
 ## Repository Structure
